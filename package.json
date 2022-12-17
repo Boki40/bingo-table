@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "tsc && tailwindcss build -i src/index.css -o public/styles.css && vite build"
   },
   "dependencies": {
     "daisyui": "^2.45.0",
