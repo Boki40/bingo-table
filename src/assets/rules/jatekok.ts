@@ -489,47 +489,14 @@ export const games: Game[] = [
     {
         cimke: "Játék",
         szoveg: "3 körig fel vagy mentve az ivás alól.",
-    },/*
-    {
-        cimke: "Gyorsan!",
-        szoveg:
-            "%s, válassz egy szót! Az első ember, aki egy dalt énekel ezzel a szóval, kioszthat [k] kortyot!",
     },
     {
-        cimke: "Gyorsan!",
-        szoveg: "Aki először kap elő egy gumit, az kioszthat [k] kortyot.",
+        cimke: "Feladat",
+        szoveg: "Nyald meg a könyöked, vagy igyál [k] kortyot.",
     },
     {
-        cimke: "Gyorsan!",
-        szoveg:
-            "Aki először küld üzenetet egy családtagnak, az kioszthat [k] kortyot!",
-    },
-    {
-        cimke: "Gyorsan!",
-        szoveg: "Aki először levesz két ruhadarabot, az kioszthat [k] kortyot.",
-    },
-    {
-        cimke: "Gyorsan!",
-        szoveg: "Aki először megnyalja a könyökét, kioszthat 100 kortyot.",
-    },
-    {
-        cimke: "Gyorsan!",
-        szoveg:
-            "Aki először mond egy inspiráló idézetet, az kioszthat [k] kortyot!",
-    },
-    {
-        cimke: "Gyorsan!",
-        szoveg: "Az utolsó, aki kiír valamit Facebookra, [k] kortyot iszik.",
-    },
-    {
-        cimke: "Játék",
-        szoveg:
-            '"Bumeráng, bumeráng..." %s átruházhatja az italát a következő körben egy játékosnak.',
-    },
-
-    {
-        cimke: "Játék",
-        szoveg: "%s 3 percig fel van mentve az ivás alól.",
+        cimke: "Feladat",
+        szoveg: "Mondj egy inspiráló idézetet, vagy igyál [k] kortyot.",
     },
     {
         cimke: "Játék",
@@ -538,26 +505,19 @@ export const games: Game[] = [
     },
     {
         cimke: "Játék",
-        szoveg: "%s iszik [k] kortyot.",
-    },
-    {
-        cimke: "Játék",
-        szoveg: "%s kioszthat [k] kortyot.",
-    },
-    {
-        cimke: "Játék",
-        szoveg: "%s választhatja ki a következő számot!",
+        szoveg: "Válaszd ki a következő dalt! Ha van olyan a társaságban akinek nem tetszik, igyál [k] kortyot!",
     },
     {
         cimke: "Játék",
         szoveg:
-            "%s választhatja ki a következő számot, akinek nem tetszik, az [k] kortyot iszik.",
+            "Igyál annyi kortyot, ahányféle színű ruhát visel a tőled balra ülő játékos!",
     },
-    {
-        cimke: "Játék",
-        szoveg:
-            "%s választhatja ki a következő számot, akinek tetszik az [k] kortyot iszik.",
-    },
+    /*
+
+
+
+
+
     {
         cimke: "Játék",
         szoveg:
