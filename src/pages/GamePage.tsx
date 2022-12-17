@@ -1,6 +1,6 @@
 import {useLocation} from "react-router-dom";
 import {Game} from "../types/game";
-import koccLogo from "../assets/logo.png"
+import koccLogo from "../assets/kocc-logo.png"
 
 export default function GamePage() {
     const location = useLocation();
