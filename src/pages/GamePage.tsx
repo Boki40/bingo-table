@@ -29,7 +29,7 @@ export default function GamePage() {
             </div>
         </div>
         <div
-            className="bg-white grid-cols-3 grid gap-4 p-4">
+            className="bg-white grid-cols-2 lg:grid-cols-3 grid gap-4 p-4">
 
             {gamesToDisplay.map((game, index) =>
                 <div
