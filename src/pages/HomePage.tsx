@@ -14,7 +14,7 @@ export default function MainPage() {
 
     return <div
         className="flex flex-col w-full h-screen align-center justify-center place-items-center gap-5 bg-white bg-slate-800">
-        <img src={logo} className="w-20"/>
+        <img src={logo} className="w-20 bg-white p-2 rounded-2xl border border-solid border-black border-2"/>
         <div className="text-white text-2xl text-center p-5 font-bold"
              style={{fontFamily: "Rubik Vinyl"}}>Ivós Danger Bingó
 
