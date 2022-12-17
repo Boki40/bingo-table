@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "tsc && tailwindcss build -i src/index.css -o public/output.css && vite build"
+    "build": "tsc && tailwindcss build -i src/index.css -o public/output.css && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "daisyui": "^2.45.0",

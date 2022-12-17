@@ -1794,6 +1794,11 @@ html {
   content: attr(data-title);
 }
 
+.link {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
 .btn:active:hover,
   .btn:active:focus {
   animation: none;
@@ -1891,6 +1896,16 @@ html {
   100% {
     background-position-y: 0;
   }
+}
+
+.link:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 @keyframes progress-loading {

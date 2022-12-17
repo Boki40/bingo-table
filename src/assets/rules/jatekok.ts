@@ -485,7 +485,11 @@ export const games: Game[] = [
     {
         cimke: "Felállni!",
         szoveg: "Aki utolsónak állt fel azok közül akiknél szerepel ez a szám, az [k] kortyot iszik.",
-    }/*
+    },
+    {
+        cimke: "Játék",
+        szoveg: "3 körig fel vagy mentve az ivás alól.",
+    },/*
     {
         cimke: "Gyorsan!",
         szoveg:
@@ -522,10 +526,7 @@ export const games: Game[] = [
         szoveg:
             '"Bumeráng, bumeráng..." %s átruházhatja az italát a következő körben egy játékosnak.',
     },
-    {
-        cimke: "Játék",
-        szoveg: "%s 3 percig fel van mentve az ivás alól.",
-    },
+
     {
         cimke: "Játék",
         szoveg: "%s 3 percig fel van mentve az ivás alól.",
