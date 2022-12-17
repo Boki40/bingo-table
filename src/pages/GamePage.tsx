@@ -10,7 +10,7 @@ export default function GamePage() {
     const gamesToDisplay = (location.state.games as Game[]);
 
 
-    return <div className="bg-black p-5 flex flex-col items-center relative">
+    return <div className="bg-slate-900 p-5 flex flex-col items-center relative">
         <div className="text-white text-2xl text-center p-5 font-bold"
              style={{fontFamily: "Rubik Vinyl"}}>Egyedi ivós Danger Bingó szabályok
             (powered by Kocc <img src={koccLogo} width='40px' className="text-center inline"/>)
