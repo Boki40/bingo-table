@@ -813,84 +813,83 @@ export const games: Game[] = [
         szoveg:
             "Mostantól 5 körig tilos hozzáérned a hajadhoz vagy az arcodhoz! Minden hozzáérés 2 korty büntetéssel jár!",
     },
+    {
+        cimke: "Játék",
+        szoveg:
+            "Ha rossz az irányérzéked, igyál [k] kortyot!",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha gördeszkáztál már egy parkban, igyál [k] kortyot!",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha sminkeltél mielőtt idejöttél, igyál [k] kortyot",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha szereted a kávét cukor nélkül, igyál [k] kortyot!",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha szundítottál már munkában, vagy órán, igyál [k] kortyot!",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha tömegközlekedéssel jutottál ide, igyál [k] kortyot!",
+    }, {
+        cimke: "Játék",
+        szoveg:
+            "Ha vallottál már valakinek szerelmet részegen, igz'l [k] kortyot!",
+    }, {
+        cimke: "Feladat",
+        szoveg: "Egy percig nem pisloghatsz, ha nem sikerül, igyál [k] kortyot!"
+    },
+    {cimke: "Feladat", szoveg: "Tedd a lábad a nyakadba, vagy igyál [k] kortyot!"},
+    {
+        cimke: "Feladat",
+        szoveg: "Rajzolj egy arcot a kezedre, és beszélj azzal a következő 5 körben, vagy igyál minden körben [k] kortyot!"
+    }, {
+        cimke: "Feladat",
+        szoveg: "Hagyd, hogy valaki kisminkeljen, vagy igyál [k] kortyot!"
+    }, {
+        cimke: "Feladat",
+        szoveg: "Beszélj a következő [k] körben úgy, hogy kilóg a nyelved. Ha nem teszed, minden körben igyál [k] kortyot!"
+    },
+    {
+        cimke: "Feladat",
+        szoveg: "Tegyél egy jégkockát a pólódba, vagy igyál [k] kortyot!"
+    },
+    {cimke: "Feladat", szoveg: "Ordítsd ki az ablakon, hogy \"Hétágra süt a nap!\", vagy igyál [k] kortyot!"},
+    {cimke: "Feladat", szoveg: "Énekelj el egy magyar népdalt, vagy igyál [k] kortyot!"},
+    {cimke: "Feladat", szoveg: "Játsz a következő két körben póló és nadrág nélkül, vagy igyál [k] kortyot!"},
+    {cimke: "Feladat", szoveg: "Igyál meg egy pohár bort 15 másodperc alatt!"},
+    {cimke: "Feladat", szoveg: "Borotváld le az egyik srác lábát a szobában, vagy igyál [k] kortyot!"},
+    {cimke: "Feladat", szoveg: "Hívj fel egy random telefonszámot, és vallj szerelmet neki, vagy igyál [k] kortyot!"},
+    {
+        cimke: "Feladat",
+        szoveg: "Beszélj megállás nélkül 10 percen át, akármiről, ami eszedbe jut, vagy igyál [k] kortyot minden percben!"
+    },
+    {
+        cimke: "Feladat",
+        szoveg: "Játszd el a következő 3 körben, hogy az ellenkező nemhez tartozol, vagy igyál minden körben [k] kortyot!"
+    },
+    {
+        cimke: "Feladat",
+        szoveg: "A tőled jobbra ülő játékos itasson meg téged úgy, hogy ő tartja a poharad. Szívószál használata tilos!"
+    },
+    {
+        cimke: "Feladat",
+        szoveg: "A tőled balra ülő játékos itasson meg téged úgy, hogy ő tartja a poharad. Szívószál használata tilos!"
+    },
+
+
     /*
 
 
 
 
 
-
-
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha rossz az irányérzéked (a csoport a bírád), igyál [k] kortyot! Ha nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha gördeszkáztál már egy parkban, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha sminkeltél mielőtt idejöttél, ossz ki [k] kortyot! Ha nem, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha szakítottál már el gumit akció közben, ossz ki [k] kortyot! Ha még nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha szereted a kávét cukor nélkül, ossz ki [k] kortyot! Ha nem így van, te iszol [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha szerveztél már %s&val közös hétvégét, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha szerveztél már bulit %s&val, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha szundítottál már munkában, vagy órán, ossz ki [k] kortyot! Ha nem, te iszol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha tettél már úgy, hogy megmostad a kezed WC után, igyál [k] kortyot! Ha még nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha tudod mit jelent a glory hole, igyál [k] kortyot! Ha nem, kortyokat és nézd meg az interneten, hogy mit jelent!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha töltöttél már el egy hétnél többet egy szigeten, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha tömegközlekedéssel jutottál ide, ossz ki [k] kortyot! Ha nem, legközelebb legyél környezetbarát és most igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha vallottál már valakinek szerelmet részegen, ossz ki [k] kortyot! Ha nem, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha van olyan Justin Bieber szám, ami tetszik, igyál [k] kortyot!",
-        },
         {
             cimke: "Játék",
             szoveg:
