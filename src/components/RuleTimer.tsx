@@ -8,17 +8,17 @@ export default function RuleTimer({
   minutes?: number;
   seconds?: number;
 }) {
-  const [remainingSeconds, setRemainingSeconds] = useState<number>(
+  const [remainingSecs, setRemainingSecs] = useState<number>(
     minutes * 60 + seconds
   );
   const [active, setActive] = useState<boolean>(true);
 
   useEffect(() => {
     let myInterval = setInterval(() => {
-      if (remainingSeconds > 0) {
-        setRemainingSeconds(remainingSeconds - 1);
+      if (remainingSecs > 0) {
+        setRemainingSecs(remainingSecs - 1);
       }
-      if (remainingSeconds === 0) {
+      if (remainingSecs === 0) {
         clearInterval(myInterval);
         setActive(false);
       }
@@ -27,7 +27,7 @@ export default function RuleTimer({
       clearInterval(myInterval);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [remainingSeconds]);
+  }, [remainingSecs]);
 
   return (
     <motion.div
@@ -40,15 +40,16 @@ export default function RuleTimer({
         <div className="grid grid-flow-col gap-5 text-center auto-cols-max h-5">
           <div className="flex p-2 bg-yellow-500 rounded-box text-black gap-1">
             <span className="countdown font-mono text-xl text-black">
-              <span
-                style={{ "--value": Math.floor(remainingSeconds / 60) }}
+            {/* @ts-ignore */}
+              <span style={{ "--value": Math.floor(remainingSecs / 60) }}
               ></span>
             </span>
             p
           </div>
           <div className="flex p-2 bg-yellow-500 rounded-box  text-black gap-1">
             <span className="countdown font-mono text-xl text-black">
-              <span style={{ "--value": remainingSeconds % 60 }}></span>
+              {/* @ts-ignore */}
+              <span style={{ "--value": remainingSecs % 60 }}></span>
             </span>
             mp
           </div>
