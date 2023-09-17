@@ -878,6 +878,10 @@ export const games: Game[] = [
     szoveg:
       "A tőled balra ülő játékos itasson meg téged úgy, hogy ő tartja a poharad. Szívószál használata tilos!",
   },
+  {
+    cimke: "Feladat",
+    szoveg: "Mondd el 3 Linkin Park dal címét, vagy igyál [k] kortyot.",
+  },
 
   /*
 
