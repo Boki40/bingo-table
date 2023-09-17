@@ -7,7 +7,8 @@
     "dev": "vite",
     "preview": "vite preview",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
     "daisyui": "^3.7.5",
@@ -19,9 +20,20 @@
   "devDependencies": {
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.15",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
