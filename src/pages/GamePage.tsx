@@ -1,16 +1,14 @@
-import { useLocation } from "react-router-dom";
-import { Game } from "../types/game";
-import koccLogo from "../assets/kocc-logo.png";
+import { delay, motion } from "framer-motion";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import koccLogo from "../assets/kocc-logo.png";
+import { useGameContext } from "../context/GameContext";
 
 import "./GamePage.css";
 
 export default function GamePage() {
   const [revealedIndexes, setRevaledIndexes] = useState<number[]>([]);
 
-  const location = useLocation();
-  const gamesToDisplay = location.state.games as Game[];
+  const { games: gamesToDisplay } = useGameContext();
 
   return (
     <div className="bg-slate-900 p-5 flex flex-col items-center relative">
@@ -58,9 +56,10 @@ export default function GamePage() {
             className="relative"
             key={index}
             animate={{
-              opacity: [0, 0, 0, 0, 0, 0, 1],
-              scale: [0, 0, 0, 0, 0, 0, 0, 0.5, 1.3, 1],
+              opacity: [0, 1],
+              scale: [0, 0.5, 1.3, 1],
             }}
+            transition={{ delay: 0.8 + index * 0.03 }}
           >
             <motion.div
               onClick={() => setRevaledIndexes((prev) => [...prev, index])}
@@ -90,6 +89,12 @@ export default function GamePage() {
               style={{ fontFamily: "Kalam" }}
             >
               {game.szoveg}
+              {game.customComponent &&
+                revealedIndexes.includes(index) &&
+                game.customComponent(
+                  revealedIndexes.indexOf(index),
+                  revealedIndexes.length
+                )}
             </div>
           </motion.div>
         ))}

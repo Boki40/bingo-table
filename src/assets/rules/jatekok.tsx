@@ -1,6 +1,46 @@
+import CountDownRule from "../../components/CountDownRule";
+import RandomSip from "../../components/RandomSip";
+import RuleTimer from "../../components/RuleTimer";
+import SpotifyLink from "../../components/SpotifyLink";
 import { Game } from "../../types/game";
 
 export const games: Game[] = [
+  {
+    cimke: "Feladat",
+    szoveg:
+      "2 körig minden kérdésre válaszolnod kell, és ha megtagadod a választ, minden kérdésnél [k] kortyot iszol!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={2}
+        currentRound={currentRound}
+      />
+    ),
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Akiknél szerepel ez a szám, egyezzenek meg és válasszanak egyet az alábbiak közül:",
+    customComponent: () => <RandomSip />,
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "A számot birtoklók közül válasszon egyet az, aki a legfiatalabb (az eredmény nem csak arra vonatkozik aki választ):",
+    customComponent: () => <RandomSip />,
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "A számot birtoklók közül válasszon egyet az, aki a legidősebb (az eredmény nem csak arra vonatkozik aki választ):",
+    customComponent: () => <RandomSip />,
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "A számot birtoklók közül válasszon egyet az, aki a legkevesebbet itta eddig (az eredmény nem csak arra vonatkozik aki választ):",
+    customComponent: () => <RandomSip />,
+  },
   {
     cimke: "Feladat!",
     szoveg:
@@ -101,11 +141,7 @@ export const games: Game[] = [
     szoveg:
       "Adj két percre korlátlan hozzáférést a tőled balra ülőnek a Facebookodhoz, vagy igyál [k] kortyot!",
   },
-  {
-    cimke: "Feladat",
-    szoveg:
-      "2 körig minden kérdésre válaszolnod kell, és ha megtagadod a választ, minden kérdésnél [k] kortyot iszol!",
-  },
+
   {
     cimke: "Feladat",
     szoveg: "Csinálj 3 táncmozdulatot, vagy igyál [k] kortyot!",
@@ -165,6 +201,13 @@ export const games: Game[] = [
   {
     cimke: "Feladat",
     szoveg: "5 körig csendben kell maradnod, vagy húzd le az italod!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={5}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Feladat",
@@ -173,42 +216,79 @@ export const games: Game[] = [
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 One Direction dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="4AK6F7OLvEQ5QYCBNiQWHq?si=A7Plgvv2Rl-LT6-uR1s6Iw" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Avril Lavigne dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="0p4nmQO2msCgU4IF37Wi3j?si=8g86lk_eQieSgWUF6udyZA" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Lady Gaga dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="1HY2Jd0NmPuamShAr6KMms?si=KEvzJpmDRUicMiXXWjUfZQ" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Lagzi Lajcsi dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="2S9AJNRuoVw1Gn3I1n6Y65?si=xKTKfWzxRqOw00q6y-HH-Q" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Linkin Park dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="6XyY86QOPPrYVGvF9ch6wz?si=tk5b7ls1RpqUq0_72fC4tA" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Carson Coma dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="1q7g5SBAxtjizS3Vcof6Y6?si=7iTeIO9ISqSaYNOO-NWDbQ" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Zámbó Jimmy dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="7pZH7c4HbKE0ONErpw9cjP?si=buLvHftNQlG5ySyOeEUZjA" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 SP dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="5k2dnlbkrNTacsiUCfnkky?si=7b2bb5f9db7c4bcf" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Selena Gomez dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="0C8ZW7ezQVs4URX5aX7Kqx?si=9b29a8f683ed4396" />
+    ),
   },
   {
     cimke: "Feladat",
     szoveg: "Mondd el 3 Twenty One Pilots dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="3YQKmKGau1PzlVlkL1iodx?si=4234cda1ad9b4760" />
+    ),
+  },
+  {
+    cimke: "Feladat",
+    szoveg: "Mondd el 3 Imagine Dragons dal címét, vagy igyál [k] kortyot.",
+    customComponent: () => (
+      <SpotifyLink artistId="53XhwfbYqKCa1cC15pYq2q?si=e9bf2099ef4742d9" />
+    ),
   },
   {
     cimke: "Feladat",
@@ -363,11 +443,19 @@ export const games: Game[] = [
     cimke: "Feladat",
     szoveg:
       "Mosolyogj egy percig megállás nélkül. [k] kortyot iszol ha abbahagyod idő előtt!",
+    customComponent: () => <RuleTimer minutes={1} />,
   },
   {
     cimke: "Feladat",
     szoveg:
       "Mosolyogj négy körig megállás nélkül. [k] kortyot iszol ha abbahagyod idő előtt!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={4}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Feladat",
@@ -468,6 +556,13 @@ export const games: Game[] = [
     cimke: "Feladat",
     szoveg:
       "Tessék komoly képet vágni! 3 körig nem mosolyoghatsz, vagy [k] kortyot iszol.",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={3}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Felállni!",
@@ -477,6 +572,13 @@ export const games: Game[] = [
   {
     cimke: "Játék",
     szoveg: "3 körig fel vagy mentve az ivás alól.",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={3}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Feladat",
@@ -695,7 +797,7 @@ export const games: Game[] = [
   },
   {
     cimke: "Játék",
-    szoveg: "Ha lány vagy igyál [k] kortyot!",
+    szoveg: "Ha lány vagy, igyál [k] kortyot!",
   },
   {
     cimke: "Játék",
@@ -767,21 +869,49 @@ export const games: Game[] = [
     cimke: "Vírus",
     szoveg:
       "Mostantól 5 körig felváltva le kell, hogy ülj és fel kell hogy állj. Ha elfelejted, [k] kortyot iszol!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={5}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Vírus",
     szoveg:
-      "Mostantól  5 körig jelentkezned kell, ha beszélni szeretnél! A többi játékos pedig felszólít! Ha elfelejted, [k] kortyot kell innod!",
+      "Mostantól 5 körig jelentkezned kell, ha beszélni szeretnél! A többi játékos pedig felszólít! Ha elfelejted, [k] kortyot kell innod!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={5}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Vírus",
     szoveg:
       "Mostantól 4 körig nem beszélhetsz. Akárhányszor megszólalsz, iszol 2 kortyot.",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={4}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Vírus",
     szoveg:
       "Mostantól 5 körig tilos hozzáérned a hajadhoz vagy az arcodhoz! Minden hozzáérés 2 korty büntetéssel jár!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={5}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Játék",
@@ -814,6 +944,7 @@ export const games: Game[] = [
   {
     cimke: "Feladat",
     szoveg: "Egy percig nem pisloghatsz, ha nem sikerül, igyál [k] kortyot!",
+    customComponent: () => <RuleTimer minutes={1} />,
   },
   {
     cimke: "Feladat",

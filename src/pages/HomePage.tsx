@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import { games } from "../assets/rules/jatekok";
-import logo from "../assets/logo.svg";
+import { useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import koccLogo from "../assets/kocc-logo.png";
+import logo from "../assets/logo.svg";
+import { games } from "../assets/rules/jatekok";
 import Select from "../components/Select";
-import { useState } from "react";
-import { useMemo } from "react";
+import { useGameContext } from "../context/GameContext";
 
 const DIFFICULTIES = [
   { mode: 1, min: 1, max: 3, title: "Könnyű (1-3 korty)" },
@@ -15,8 +15,11 @@ const DIFFICULTIES = [
 type DifficultyMode = (typeof DIFFICULTIES)[number]["mode"];
 
 export default function MainPage() {
+  const { setGames } = useGameContext();
   const [selectedDifficulty, setSelectedDifficulty] =
     useState<DifficultyMode>(1);
+
+  const navigate = useNavigate();
 
   const randomSetOfGames = useMemo(() => {
     const { min, max } = DIFFICULTIES.find(
@@ -37,6 +40,11 @@ export default function MainPage() {
         return res;
       });
   }, [selectedDifficulty]);
+
+  const handleGameStart = () => {
+    setGames(randomSetOfGames);
+    navigate("/game");
+  };
 
   return (
     <div className="flex flex-col w-full h-screen align-center justify-center place-items-center gap-5  bg-slate-800">
@@ -65,9 +73,9 @@ export default function MainPage() {
         value={selectedDifficulty}
         onChange={(_e, value) => setSelectedDifficulty(value as DifficultyMode)}
       />
-      <Link to="/game" state={{ games: randomSetOfGames }}>
-        <button className=" btn">Start</button>
-      </Link>
+      <button className="btn" onClick={handleGameStart}>
+        Start
+      </button>
       <p className="text-sm font-bold text-white">
         {" "}
         (powered by Kocc{" "}
