@@ -1,8 +1,16 @@
 import { Variants, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export default function RuleTimer({ minutes = 0, seconds = 0 }: { minutes?: number; seconds?: number }) {
-  const [remainingSecs, setRemainingSecs] = useState<number>(minutes * 60 + seconds);
+export default function RuleTimer({
+  minutes = 0,
+  seconds = 0,
+}: {
+  minutes?: number;
+  seconds?: number;
+}) {
+  const [remainingSecs, setRemainingSecs] = useState<number>(
+    minutes * 60 + seconds
+  );
   const [active, setActive] = useState<boolean>(true);
 
   useEffect(() => {
@@ -32,13 +40,18 @@ export default function RuleTimer({ minutes = 0, seconds = 0 }: { minutes?: numb
         <div className="grid grid-flow-col gap-5 text-center auto-cols-max h-5">
           <div className="flex p-2 bg-yellow-500 rounded-box text-black gap-1">
             <span className="countdown font-mono text-xl text-black">
-              {/* @ts-ignore */}
-              <span style={{ "--value": Math.floor(remainingSecs / 60) }}></span>
+              <span
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                /*
+               // @ts-ignore */
+                style={{ "--value": Math.floor(remainingSecs / 60) }}
+              ></span>
             </span>
             p
           </div>
           <div className="flex p-2 bg-yellow-500 rounded-box  text-black gap-1">
             <span className="countdown font-mono text-xl text-black">
+              {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
               {/* @ts-ignore */}
               <span style={{ "--value": remainingSecs % 60 }}></span>
             </span>

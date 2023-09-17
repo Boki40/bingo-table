@@ -16,12 +16,15 @@ type DifficultyMode = (typeof DIFFICULTIES)[number]["mode"];
 
 export default function MainPage() {
   const { setGames } = useGameContext();
-  const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyMode>(1);
+  const [selectedDifficulty, setSelectedDifficulty] =
+    useState<DifficultyMode>(1);
 
   const navigate = useNavigate();
 
   const randomSetOfGames = useMemo(() => {
-    const { min, max } = DIFFICULTIES.find((d) => d.mode == selectedDifficulty) as (typeof DIFFICULTIES)[number];
+    const { min, max } = DIFFICULTIES.find(
+      (d) => d.mode == selectedDifficulty
+    ) as (typeof DIFFICULTIES)[number];
 
     return games
       .sort(() => Math.random() - 0.5)
@@ -29,7 +32,10 @@ export default function MainPage() {
       .map((game) => {
         const res = { ...game };
         while (res.szoveg.includes("[k]")) {
-          res.szoveg = res.szoveg.replace("[k]", randomNumber(min, max).toString());
+          res.szoveg = res.szoveg.replace(
+            "[k]",
+            randomNumber(min, max).toString()
+          );
         }
         return res;
       });
@@ -42,12 +48,21 @@ export default function MainPage() {
 
   return (
     <div className="flex flex-col w-full h-screen align-center justify-center place-items-center gap-5  bg-slate-800">
-      <img alt="bingo-logo" src={logo} className="w-20 bg-white p-2 rounded-2xl border-solid border-black border-2" />
-      <div className="text-white text-2xl text-center p-5 font-bold" style={{ fontFamily: "Rubik Vinyl" }}>
+      <img
+        alt="bingo-logo"
+        src={logo}
+        className="w-20 bg-white p-2 rounded-2xl border-solid border-black border-2"
+      />
+      <div
+        className="text-white text-2xl text-center p-5 font-bold"
+        style={{ fontFamily: "Rubik Vinyl" }}
+      >
         Ivós Danger Bingó
       </div>
 
-      <h1 className="text-lg font-bold text-white">Kattints a startra a szabályok létrehozásához</h1>
+      <h1 className="text-lg font-bold text-white">
+        Kattints a startra a szabályok létrehozásához
+      </h1>
       <Select
         title="mode"
         label="Nehézség"
@@ -63,7 +78,14 @@ export default function MainPage() {
       </button>
       <p className="text-sm font-bold text-white">
         {" "}
-        (powered by Kocc <img alt="kocc-logo" src={koccLogo} width="30px" className="text-center inline" />)
+        (powered by Kocc{" "}
+        <img
+          alt="kocc-logo"
+          src={koccLogo}
+          width="30px"
+          className="text-center inline"
+        />
+        )
       </p>
     </div>
   );
