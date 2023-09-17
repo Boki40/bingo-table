@@ -25,7 +25,7 @@ export default function MainPage() {
 
     return games
       .sort(() => Math.random() - 0.5)
-      .slice(0, 75)
+      .slice(0, 69)
       .map((game) => {
         const res = { ...game };
         while (res.szoveg.includes("[k]")) {
