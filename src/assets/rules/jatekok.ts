@@ -192,6 +192,10 @@ export const games: Game[] = [
   },
   {
     cimke: "Feladat",
+    szoveg: "Mondd el 3 Carson Coma dal címét, vagy igyál [k] kortyot.",
+  },
+  {
+    cimke: "Feladat",
     szoveg: "Mondd el 3 Zámbó Jimmy dal címét, vagy igyál [k] kortyot.",
   },
   {
@@ -844,6 +848,10 @@ export const games: Game[] = [
   },
   {
     cimke: "Feladat",
+    szoveg: "Énekeld el egy mulatós zene refrénjét, vagy igyál [k] kortyot!",
+  },
+  {
+    cimke: "Feladat",
     szoveg:
       "Játsz a következő két körben póló és nadrág nélkül, vagy igyál [k] kortyot!",
   },
@@ -883,444 +891,191 @@ export const games: Game[] = [
     szoveg: "Mondd el 3 Linkin Park dal címét, vagy igyál [k] kortyot.",
   },
 
+  {
+    cimke: "Játék",
+    szoveg:
+      "Ha van olyan barátod, akivel általában idegen nyelven beszélsz, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha vetted már fel a hangod éneklés közben, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha vettél már be szintetikus drogokat, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Ha vezettél már gyorsabban, mint 150 km/h, akkor igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha volt már idén hasmenésed igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha voltál moziban a héten, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha voltál már babysitter, ossz ki [k] kortyot! Ha még nem, igyál!",
+  },
+  {
+    cimke: "Feladat",
+    szoveg: "Csinálj 10 fekvőtámaszt, vagy igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha voltál már érintett részeg bunyóban, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál [k] kortyot, ha be tervezed fejezni a bulit 3 előtt! Ha nem, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál [k] kortyot, ha beszéltél már a házasságról vagy a gyerekekről a jelenlegi vagy a volt partnereddel!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha valakit nem kedvelsz a társaságból!",
+  },
+  {
+    cimke: "Feladat",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány magánhangzó van a keresztnevedben!",
+  },
+  {
+    cimke: "Feladat",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány mássalhangzó van a keresztnevedben!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál annyiszor [k] kortyot, ahány exeddel már nem beszélsz!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál annyiszor [k] kortyot, ahány nyelven be tudsz mutatkozni!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál annyiszor [k] kortyot, ahány országban jártál már!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány általános iskolás osztálytársaddal még ma is tartod a kapcsolatot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha van tetoválásod, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha szereted a kávét, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha van testvéred, igyál [k] kortyot!",
+  },
+  { cimke: "Játék", szoveg: "Ha van háziállatod, igyál [k] kortyot!" },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha szereted a horrorfilmeket!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál annyi kortyot, ahány játékos van játékban!",
+  },
+  { cimke: "Játék", szoveg: "Ha van piercinged, igyál [k] kortyot!" },
+  { cimke: "Játék", szoveg: "Ha szereted a csokit, igyál [k] kortyot!" },
+  { cimke: "Játék", szoveg: "Ha van jogosítványod, igyál [k] kortyot!" },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha már voltál szerelmes valakibe idén!",
+  },
+  { cimke: "Játék", szoveg: "Ha szereted a macskákat, igyál [k] kortyot!" },
+  { cimke: "Játék", szoveg: "Ha van valami fóbiád, igyál [k] kortyot!" },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány évvel idősebb vagy a legfiatalabb játékostársadnál!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány évvel fiatalabb vagy a legidősebb játékostársadnál!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Ha még nem ittál meg két pohárral, igyál [k] kortyot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha lány vagy.",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha fiú vagy.",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha használod a TikTokot!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha már csináltál képet hírességről!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyál annyiszor [k] kortyot, ahány játékost a becenevén szólitasz!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha volt már egyéjszakás kalandod!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyon [k] kortyot a játékosok közül, akiknél szerepel ez a szám, akinek a legkevesebb arcszőrzete van!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Igyon [k] kortyot a játékosok közül, akiknél szerepel ez a szám, akinek a legtöbb arcszőrzete van!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha balkezes vagy!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha jobbkezes vagy!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha szőke hajad van!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha barna hajad van!",
+  },
+  {
+    cimke: "Játék",
+    szoveg: "Igyál [k] kortyot, ha fekete hajad van!",
+  },
+  {
+    cimke: "Játék",
+    szoveg:
+      "Aki a legmesszebb lakik innen a számot birtoklók közül, az igyon [k] kortyot.",
+  },
   /*
 
-
-
-
-
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha van olyan barátod, akivel általában idegen nyelven beszélsz, ossz ki [k] kortyot! Ha nincs, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha vetted már fel a hangod éneklés közben, igyál [k] kortyot! Ha még nem, oszd ki!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha vettél már be szintetikus drogokat, igyál [k] kortyot! Ha nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha vezettél már gyorsabban, mint 150 km/h, akkor igyál [k] kortyot! Ha nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha volt már idén hasmenésed igyál [k] kortyot! Ha még nem, oszd ki!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál moziban a héten, ossz ki [k] kortyot! Ha nem, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már %s&val nyaralni, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már babysitter, ossz ki [k] kortyot! Ha még nem, igyál!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már fesztiválon anélkül, hogy drogoztál volna, ossz ki [k] kortyot! Ha nem, te idd meg!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már fesztiválozni %s&val, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már házibuliban %s lakásán, ossz ki [k] kortyot! Ha nem, idd meg te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, ha voltál már letartóztatva, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már moziban %s&val, ossz ki [k] kortyot! Ha még nem, igyál te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már munkanélküli, igyál [k] kortyot! Ha még nem, oszd ki te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már szabadulószobában, ossz ki [k] kortyot! Ha ki is jutottál már, még [k] kortyot! Ha még nem, akkor igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha voltál már vásárolni %s&val, ossz ki [k] kortyot! Ha még nem, igyál te!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, ha voltál már érintett részeg bunyóban, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha éltél már együtt valakivel, igyál [k] kortyot! Ha még nem, oszd ki őket!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha írtál már verset iskolai feladaton kívül, igyál [k] kortyot! Ha még nem, oszd ki!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha úgy érzed, hogy meg kell simogatnod a kutyád, ha a szobában van, igyál [k] kortyot! Ha nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha úgy érzed, hogy már fűt az alkohol, ossz ki [k] kortyot! Ha nem, te iszol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ha ütöttél már meg, vagy pofoztál már fel valakit részegen, ossz ki [k] kortyot! Ha nem, te iszol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, húzz le 3 italt egymás után, vagy adj egy 5 csillagos értékelést az Kocc appnak a Google Playen! Ha már értékelted, fasza gyerek vagy, jutalomképpen ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot,\t ha álltál már be valaki elé a sorban! Ha még nem, kioszthatsz [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha be tervezed fejezni a bulit 3 előtt! Ha nem, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha beszéltél már a házasságról vagy a gyerekekről a jelenlegi vagy a volt partnereddel!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha buktál már le puskázás közben!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha ejtetted már a sószórót a tányérodra!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha ing van rajtad!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha már maszturbáltál azért, hogy el tudj aludni!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha már voltál bunkó egy tanároddal! Ossz ki [k] kortyot, ha nem!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha szereted a meztelen fürdést medencében vagy az óceánban! Ha nem, ossz ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha szoktál 9gag-et vagy hasonló vicces oldalakat nézegetni, ha unatkozol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha terveztél idénre külföldre utazni!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha valakit nem kedvelsz a társaságból!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha van unokaöcséd vagy unokahúgod! Ha nincs, oszd ki másnak!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha vettél már táncórákat! Ossz ki [k] kortyot, ha még nem!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál [k] kortyot, ha voltál már szarni egy főút melletti WC-n! Ha még nem oszd ki a [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál [k] kortyot, ha írtál már verset 15 éves korod óta!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál annyi kortyot, ahány bankkártyát, igazolványt elveszítettél!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál annyi kortyot, ahány bogarat véletlenül már belélegeztél!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál annyi kortyot, ahány exeddel már nem beszélsz!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál annyi kortyot, ahány nyelven be tudsz mutatkozni!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál annyi kortyot, ahány országban jártál már!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, igyál annyi kortyot, ahány általános iskolás osztálytársaddal még ma is tartod a kapcsolatot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál annyit, ahány cici van a teremben! (1 cici=[k] korty)",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, igyál annyit, ahány játékos van játékban!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, kioszthatsz [k] kortyot valakinek, ha te már megittál 2 pohárral. Ha nem, akkor te igyál!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, mit láttál utoljára színházban? Bárki, aki nem látta, igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ossz ki [k] kortyot, ha kevesebb mint egy hónapja cserélted az ágyneműdet! Ha nem, akkor te iszol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ossz ki [k] kortyot, ha lány vagy, igyál [k] kortyot, ha fiú vagy! Ha egyik sem, húzd le az italod!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ossz ki [k] kortyot, ha már csináltál képet hírességről! Ha még nem, akkor te iszol!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, ossz ki annyi kortyot, ahány egykezes fekvőtámaszt itt helyben meg tudsz csinálni!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, ossz ki annyi kortyot, ahány játékost a becenevén szólítasz!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "%s, ossz ki annyi kortyot, ahány országban jártál már!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, tervezel még menni a buli után valahova? Ha igen, ossz ki [k] kortyot azok között, akik veled tartanak! Ha nem, igyál [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, volt már egyéjszakás kalandod? Ha igen, ossz ki [k] kortyot, ha nem igyál!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "%s, válaszd ki az ivó ribancodat! A játék során kétszer átruházhatod a kortyaidat!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A %s mellett balra ülő játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A %s mellett jobbra ülő játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A 3 legkevesebb arcszőrzettel rendelkező játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A balkezesek isznak [k] kortyot.",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A buli házigazdája kioszthat [k] kortyot! Ha nem házibuliban vagytok, akkor %s ossza ki a kortyokat!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A fiúk annyi kortyot isznak, ahány jó csaj van szerintük a csoportban.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legbarnább játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legbutább játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legbüdösebb játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legfiatalabb játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legmagasabb játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legszegényebb játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három legszőrösebb játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A három tesó: %s, %s és %s igyon [k] kortyot fejenként!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A kiskorúak igyanak [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A körülményes emberek igyanak [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legfiatalabb játékos osszon ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A legidősebb játékos kioszt [k] kortyot egy játékosnak és még [k] kortyot egy másiknak!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legkevésbé szőrös testű játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legmagasabb játékos kioszthat [k] kortyot.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legnagyobb seggű játékos iszik [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legtöbb hajjal rendelkező játékos [k] kortyot iszik.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A legvékonyabb kezű játékos igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A lányok annyi kortyot isznak, ahány jóképű fiú van szerintük a társaságban.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A ma esti DJ kioszthat [k] kortyot.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A rúzsozott szájú lányok [k] kortyot isznak!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A szabályt felolvasó játékostól balra lévő személy igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A szabályt felolvasó játékostól balra lévő személy osszon ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A szabályt felolvasó játékostól jobbra lévő személy igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg:
-                "A szabályt felolvasó játékostól jobbra lévő személy osszon ki [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A szakállas játékosok igyanak [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "A szőkék [k] kortyot isznak.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki %s és %s közül eddig kevesebbet ivott, igyon [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki a leghígabb italt issza, igya meg a felét!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki a legmesszebb lakik innen, az kiadhat [k] kortyot.",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki a legtöbbet maszturbál egy nap, kioszthat [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki a társaságból legutoljára szexelt, kioszthat [k] kortyot.",
-        },
         {
             cimke: "Játék",
             szoveg: "Aki az előbb hozzáért a képernyőhöz, igyon [k] kortyot!",
@@ -3544,20 +3299,5 @@ export const games: Game[] = [
             cimke: "Játék",
             szoveg: "Igyon [k] kortyot, aki követi %s Instagram profilját!",
         },
-        {
-            cimke: "Játék",
-            szoveg: "Igyon [k] kortyot, aki használja a TikTokot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Aki már kapott COVID oltást, az kioszthat [k] kortyot!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Mindenki annyi kortyot iszik, ahány munkahelye volt eddig!",
-        },
-        {
-            cimke: "Játék",
-            szoveg: "Mindenki annyi kortyot iszik, ahányszor bukott vezetésből!",
-        },*/
+  */
 ];

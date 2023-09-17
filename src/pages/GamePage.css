@@ -15,7 +15,7 @@
 }
 
 .board-grid {
-  @apply bg-white grid-cols-2 lg:grid-cols-3 grid gap-4 p-4 w-full select-none rounded-3xl;
+  @apply bg-white grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4 p-4 w-full select-none rounded-3xl;
 }
 
 .board-cell-title {
