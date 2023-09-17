@@ -23,7 +23,7 @@
 }
 
 .board-cell-title.unrevealed {
-  @apply scale-125 translate-x-1/2 translate-y-1/2 cursor-pointer;
+  @apply cursor-pointer;
 }
 
 .board-cell-number {
@@ -39,7 +39,7 @@
 }
 
 .board-cell-text {
-  @apply text-black transition font-semibold select-none;
+  @apply text-black transition delay-200 font-semibold select-none;
 }
 
 .board-cell-text.unrevealed {

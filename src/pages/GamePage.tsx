@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { Game } from "../types/game";
 import koccLogo from "../assets/kocc-logo.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import "./GamePage.css";
 
@@ -29,34 +30,58 @@ export default function GamePage() {
       >
         <div className="revealed-bar">
           {revealedIndexes.map((number, index) => (
-            <div
-              className="revealed-number"
-              style={{ fontFamily: "Rubik Vinyl" }}
+            <motion.div
               key={index}
+              animate={{
+                rotate: [0, 270, 180, 0],
+                x: [50, 0],
+              }}
             >
-              {number + 1}
-            </div>
+              <div
+                className="revealed-number"
+                style={{ fontFamily: "Rubik Vinyl" }}
+              >
+                {number + 1}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
-      <div className="board-grid">
+      <motion.div
+        className="board-grid"
+        animate={{
+          borderRadius: ["50%", "45%", "40%", "30%", "3rem"],
+        }}
+      >
         {gamesToDisplay.map((game, index) => (
-          <div className="relative" key={index}>
-            <div
+          <motion.div
+            className="relative"
+            key={index}
+            animate={{
+              opacity: [0, 0, 0, 0, 0, 0, 1],
+              scale: [0, 0, 0, 0, 0, 0, 0, 0.5, 1.3, 1],
+            }}
+          >
+            <motion.div
               onClick={() => setRevaledIndexes((prev) => [...prev, index])}
               className={`board-cell-title
               ${!revealedIndexes.includes(index) && "unrevealed"}`}
               style={{ fontFamily: "Rubik Vinyl" }}
+              animate={
+                revealedIndexes.includes(index) ? "revealed" : "unrevealed"
+              }
+              variants={titleVariants}
+              transition={{ duration: 0.2 }}
             >
               <div
                 className={`board-cell-number  ${
                   !revealedIndexes.includes(index) ? "unrevealed" : "revealed"
                 }`}
               >
-                {index + 1}
-              </div>{" "}
+                <div>{index + 1}</div>
+              </div>
               <div>{game.cimke}</div>
-            </div>
+            </motion.div>
             <div className="h-[50px]" />
             <div
               className={`board-cell-text ${
@@ -66,9 +91,14 @@ export default function GamePage() {
             >
               {game.szoveg}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
+
+const titleVariants = {
+  revealed: { x: 0, y: 0, scale: 1 },
+  unrevealed: { x: "50%", y: "50%", scale: 1.6 },
+};
