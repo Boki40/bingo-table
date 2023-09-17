@@ -18,8 +18,6 @@ export default function MainPage() {
   const [selectedDifficulty, setSelectedDifficulty] =
     useState<DifficultyMode>(1);
 
-    console.log(games.length)
-
   const randomSetOfGames = useMemo(() => {
     const { min, max } = DIFFICULTIES.find(
       (d) => d.mode == selectedDifficulty
