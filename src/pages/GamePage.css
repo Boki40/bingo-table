@@ -7,7 +7,7 @@
 }
 
 .revealed-bar {
-  @apply bg-white bg-opacity-50 backdrop-blur-sm select-none rounded-full text-black p-2 h-16 flex gap-2 font-sans font-semibold w-full justify-end border-b border-solid border-b-black border-r-black border-r-4 overflow-hidden hover:flex-wrap hover:h-fit hover:p-5 hover:rounded-2xl;
+  @apply bg-white bg-opacity-50 backdrop-blur-sm select-none rounded-full text-black p-2 h-16 flex gap-2 font-sans font-semibold w-full justify-end border-b border-solid border-b-black border-r-black border-r-4 overflow-hidden hover:flex-wrap hover:h-fit hover:pr-5 hover:rounded-2xl;
 }
 
 .revealed-number {
