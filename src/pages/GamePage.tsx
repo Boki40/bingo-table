@@ -14,9 +14,18 @@ export default function GamePage() {
     <div className="bg-slate-900 p-5 flex flex-col items-center relative">
       <div className="game-title" style={{ fontFamily: "Rubik Vinyl" }}>
         Egyedi ivós Danger Bingó szabályok (powered by Kocc{" "}
-        <img alt="kocc-logo" src={koccLogo} width="40px" className="text-center inline" />)
+        <img
+          alt="kocc-logo"
+          src={koccLogo}
+          width="40px"
+          className="text-center inline"
+        />
+        )
       </div>
-      <div className="revealed-bar-container" style={{ fontFamily: "Rubik Vinyl" }}>
+      <div
+        className="revealed-bar-container"
+        style={{ fontFamily: "Rubik Vinyl" }}
+      >
         <div className="revealed-bar">
           {revealedIndexes.map((number, index) => (
             <motion.div
@@ -26,7 +35,10 @@ export default function GamePage() {
                 x: [50, 0],
               }}
             >
-              <div className="revealed-number" style={{ fontFamily: "Rubik Vinyl" }}>
+              <div
+                className="revealed-number"
+                style={{ fontFamily: "Rubik Vinyl" }}
+              >
                 {number + 1}
               </div>
             </motion.div>
@@ -50,28 +62,42 @@ export default function GamePage() {
             transition={{ delay: 0.8 + index * 0.03 }}
           >
             <motion.div
-              onClick={() => setRevaledIndexes((prev) => [...prev, index])}
+              onClick={() =>
+                !revealedIndexes.includes(index) &&
+                setRevaledIndexes((prev) => [...prev, index])
+              }
               className={`board-cell-title
               ${!revealedIndexes.includes(index) && "unrevealed"}`}
               style={{ fontFamily: "Rubik Vinyl" }}
-              animate={revealedIndexes.includes(index) ? "revealed" : "unrevealed"}
+              animate={
+                revealedIndexes.includes(index) ? "revealed" : "unrevealed"
+              }
               variants={titleVariants}
               transition={{ duration: 0.2 }}
             >
-              <div className={`board-cell-number  ${!revealedIndexes.includes(index) ? "unrevealed" : "revealed"}`}>
+              <div
+                className={`board-cell-number  ${
+                  !revealedIndexes.includes(index) ? "unrevealed" : "revealed"
+                }`}
+              >
                 <div>{index + 1}</div>
               </div>
               <div>{game.cimke}</div>
             </motion.div>
             <div className="h-[50px]" />
             <div
-              className={`board-cell-text ${!revealedIndexes.includes(index) && "unrevealed"}`}
+              className={`board-cell-text ${
+                !revealedIndexes.includes(index) && "unrevealed"
+              }`}
               style={{ fontFamily: "Kalam" }}
             >
               {game.szoveg}
               {game.customComponent &&
                 revealedIndexes.includes(index) &&
-                game.customComponent(revealedIndexes.indexOf(index), revealedIndexes.length)}
+                game.customComponent(
+                  revealedIndexes.indexOf(index),
+                  revealedIndexes.length
+                )}
             </div>
           </motion.div>
         ))}
