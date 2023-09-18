@@ -14,7 +14,9 @@ const OPTIONS = [
 ];
 
 export default function RandomSip() {
-  const [options] = useState<string[]>(OPTIONS.sort(() => Math.random() - 0.5).slice(0, 3));
+  const [options] = useState<string[]>(
+    OPTIONS.sort(() => Math.random() - 0.5).slice(0, 3)
+  );
 
   const [selected, setSelected] = useState<number | undefined>();
 
@@ -27,13 +29,14 @@ export default function RandomSip() {
         <motion.div
           key={option}
           className={`bg-yellow-500 p-3 rounded-lg border border-b-2 max-w-[30%]  ${
-            selected === undefined && "cursor-pointer text-2xl border-b-yellow-600"
+            selected === undefined &&
+            "cursor-pointer text-2xl border-b-yellow-600"
           } 
           `}
           animate={getVariant(index, selected)}
           variants={variants}
           onClick={() => {
-            if (!selected) {
+            if (selected === undefined) {
               setSelected(index);
             }
           }}
