@@ -954,6 +954,13 @@ export const games: Game[] = [
     cimke: "Feladat",
     szoveg:
       "Rajzolj egy arcot a kezedre, és beszélj azzal a következő 5 körben, vagy igyál minden körben [k] kortyot!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={5}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Feladat",
@@ -962,7 +969,14 @@ export const games: Game[] = [
   {
     cimke: "Feladat",
     szoveg:
-      "Beszélj a következő [k] körben úgy, hogy kilóg a nyelved. Ha nem teszed, minden körben igyál [k] kortyot!",
+      "Beszélj a következő 3 körben úgy, hogy kilóg a nyelved. Ha nem teszed, minden körben igyál [k] kortyot!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={3}
+        currentRound={currentRound}
+      />
+    ),
   },
   {
     cimke: "Feladat",
@@ -984,7 +998,14 @@ export const games: Game[] = [
   {
     cimke: "Feladat",
     szoveg:
-      "Játsz a következő két körben póló és nadrág nélkül, vagy igyál [k] kortyot!",
+      "Játsz a következő 4 körben póló és nadrág nélkül, vagy igyál [k] kortyot!",
+    customComponent: (activatedInRound: number, currentRound: number) => (
+      <CountDownRule
+        activatedInRound={activatedInRound}
+        activeForNumberOfRounds={4}
+        currentRound={currentRound}
+      />
+    ),
   },
   { cimke: "Feladat", szoveg: "Igyál meg egy pohár bort 15 másodperc alatt!" },
   {
@@ -1006,6 +1027,13 @@ export const games: Game[] = [
     cimke: "Feladat",
     szoveg:
       "Játszd el a következő 3 körben, hogy az ellenkező nemhez tartozol, vagy igyál minden körben [k] kortyot!",
+      customComponent: (activatedInRound: number, currentRound: number) => (
+        <CountDownRule
+          activatedInRound={activatedInRound}
+          activeForNumberOfRounds={3}
+          currentRound={currentRound}
+        />
+      ),
   },
   {
     cimke: "Feladat",
@@ -1017,11 +1045,6 @@ export const games: Game[] = [
     szoveg:
       "A tőled balra ülő játékos itasson meg téged úgy, hogy ő tartja a poharad. Szívószál használata tilos!",
   },
-  {
-    cimke: "Feladat",
-    szoveg: "Mondd el 3 Linkin Park dal címét, vagy igyál [k] kortyot.",
-  },
-
   {
     cimke: "Játék",
     szoveg:
