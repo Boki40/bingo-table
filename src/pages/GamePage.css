@@ -1,0 +1,47 @@
+.game-title {
+  @apply text-white text-2xl text-center p-5 font-bold;
+}
+
+.revealed-bar-container {
+  @apply text-white text-2xl text-center mb-2 font-bold w-full gap-2 content-baseline sticky top-0 flex-nowrap max-w-full z-50;
+}
+
+.revealed-bar {
+  @apply bg-white bg-opacity-50 backdrop-blur-sm select-none rounded-full text-black p-2 h-16 flex gap-2 font-sans font-semibold w-full justify-end border-b border-solid border-b-black border-r-black border-r-4 overflow-hidden hover:flex-wrap hover:h-fit hover:pr-5 hover:rounded-2xl;
+}
+
+.revealed-number {
+  @apply rounded-full bg-yellow-500 border-yellow-600 border-t-2 border-t-yellow-400 border-b-4 text-black  w-12 h-12 min-w-[3rem]  text-2xl font-bold flex justify-center items-center flex-nowrap;
+}
+
+.board-grid {
+  @apply bg-white grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4 p-4 w-full select-none rounded-3xl;
+}
+
+.board-cell-title {
+  @apply text-yellow-500 font-bold  uppercase text-lg flex items-center gap-2 transition-all z-10 absolute;
+}
+
+.board-cell-title.unrevealed {
+  @apply cursor-pointer;
+}
+
+.board-cell-number {
+  @apply rounded-full text-black p-1 w-12 h-12 text-2xl font-bold flex justify-center items-center border-b-4 hover:shadow-md;
+}
+
+.board-cell-number.unrevealed {
+  @apply bg-yellow-500 border-yellow-600 border-t-2 border-t-yellow-400 cursor-pointer;
+}
+
+.board-cell-number.revealed {
+  @apply bg-gray-300 border-gray-400 border-t-2 border-t-gray-100;
+}
+
+.board-cell-text {
+  @apply text-black transition delay-200 font-semibold select-none;
+}
+
+.board-cell-text.unrevealed {
+  @apply blur-md cursor-pointer;
+}
