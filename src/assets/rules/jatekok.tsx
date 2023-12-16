@@ -939,7 +939,7 @@ export const games: Game[] = [
   },
   {
     cimke: "Játék",
-    szoveg: "Ha vallottál már valakinek szerelmet részegen, igz'l [k] kortyot!",
+    szoveg: "Ha vallottál már valakinek szerelmet részegen, igyál [k] kortyot!",
   },
   {
     cimke: "Feladat",
