@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import koccLogo from "../assets/kocc-logo.png";
 import { useGameContext } from "../context/GameContext";
 
@@ -7,6 +7,20 @@ import "./GamePage.css";
 
 export default function GamePage() {
   const [revealedIndexes, setRevaledIndexes] = useState<number[]>([]);
+
+  useEffect(() => {
+    const preventReload = (event: BeforeUnloadEvent) => {
+      // Cancel the event as stated by the standard.
+      event.preventDefault();
+      // Chrome requires returnValue to be set.
+      event.returnValue =
+        "Az oldal frissítésével a játék jelenlegi állása elvész.";
+    };
+    window.addEventListener("beforeunload", preventReload);
+    return () => {
+      window.removeEventListener("beforeunload", preventReload);
+    };
+  });
 
   const { games: gamesToDisplay } = useGameContext();
 
@@ -96,7 +110,7 @@ export default function GamePage() {
                 revealedIndexes.includes(index) &&
                 game.customComponent(
                   revealedIndexes.indexOf(index),
-                  revealedIndexes.length
+                  revealedIndexes.length,
                 )}
             </div>
           </motion.div>
@@ -107,6 +121,6 @@ export default function GamePage() {
 }
 
 const titleVariants = {
-  revealed: { x: 0, y: 0, scale: 1 },
-  unrevealed: { x: "50%", y: "50%", scale: 1.6 },
+    revealed: {x: 0, y: 0, scale: 1},
+    unrevealed: {x: "50%", y: "50%", scale: 1.6},
 };

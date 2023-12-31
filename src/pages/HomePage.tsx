@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import koccLogo from "../assets/kocc-logo.png";
 import logo from "../assets/logo.svg";
-import { games } from "../assets/rules/jatekok";
+import { games, mandatoryGames } from "../assets/rules/jatekok";
 import Select from "../components/Select";
 import { useGameContext } from "../context/GameContext";
 
@@ -23,18 +23,23 @@ export default function MainPage() {
 
   const randomSetOfGames = useMemo(() => {
     const { min, max } = DIFFICULTIES.find(
-      (d) => d.mode == selectedDifficulty
+      (d) => d.mode == selectedDifficulty,
     ) as (typeof DIFFICULTIES)[number];
 
-    return games
+    const gamesToReturn = games.sort(() => Math.random() - 0.5).slice(0, 67);
+
+    mandatoryGames.forEach((game) => {
+      gamesToReturn.push(game);
+    });
+
+    return gamesToReturn
       .sort(() => Math.random() - 0.5)
-      .slice(0, 69)
       .map((game) => {
         const res = { ...game };
         while (res.szoveg.includes("[k]")) {
           res.szoveg = res.szoveg.replace(
             "[k]",
-            randomNumber(min, max).toString()
+            randomNumber(min, max).toString(),
           );
         }
         return res;

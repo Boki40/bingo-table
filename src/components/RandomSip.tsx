@@ -7,15 +7,17 @@ const OPTIONS = [
   "Igyál 3 kortyot",
   "Igyál 4 kortyot",
   "Igyál 5 kortyot",
+  "Igyál 5 kortyot, vagy csinálj 5 fekvőt",
   "Igyál 8 kortyot",
   "Igyál 10 kortyot",
+  "Igyál 10 kortyot, vagy csinálj 10 fekvőt",
   "Nem kell innotok",
   "Mindenki igyon 5 kortyot",
 ];
 
 export default function RandomSip() {
   const [options] = useState<string[]>(
-    OPTIONS.sort(() => Math.random() - 0.5).slice(0, 3)
+    OPTIONS.sort(() => Math.random() - 0.5).slice(0, 3),
   );
 
   const [selected, setSelected] = useState<number | undefined>();
