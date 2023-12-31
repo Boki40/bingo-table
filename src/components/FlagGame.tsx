@@ -14,17 +14,23 @@ export default function FlagGame() {
 
   if (!isStarted) {
     return (
-      <div
+      <motion.div
+        key="start"
         className="bg-gray-300 flex flex-col items-center text-2xl py-5 cursor-pointer rounded-2xl"
         onClick={() => setIsStarted(true)}
+        animate={{
+          opacity: [0, 1],
+          y: [-25, 0],
+        }}
       >
         START
-      </div>
+      </motion.div>
     );
   }
 
   return (
     <motion.div
+      key="flag-game"
       onClick={() => setIsRevealed((prev) => !prev)}
       className="flex gap-5 items-center cursor-pointer bg-gray-300 rounded-2xl p-3"
       animate={{
