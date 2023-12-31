@@ -9,7 +9,7 @@ export default function GamePage() {
     const [revealedIndexes, setRevaledIndexes] = useState<number[]>([]);
 
     useEffect(() => {
-        const preventReload = (event) => {
+        const preventReload = (event: BeforeUnloadEvent) => {
             // Cancel the event as stated by the standard.
             event.preventDefault();
             // Chrome requires returnValue to be set.
